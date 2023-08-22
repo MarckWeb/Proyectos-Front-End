@@ -10,8 +10,8 @@ const Menu = () => {
                     <li className='menu__nav-item'><a href="">Colors</a></li>
                     <li className='menu__nav-item'><a href="">Typography</a></li>
                     <li className='menu__nav-item'><a href="">Spaces</a></li>
-                    <li className='menu__nav-item'><a href="">Buttons</a></li>
-                    <li className='menu__nav-item'><a href="">Inputs</a></li>
+                    <li className='menu__nav-item'><a href="https://buttons-1t24.onrender.com/">Buttons</a></li>
+                    <li className='menu__nav-item'><a href="https://inputs.onrender.com/">Inputs</a></li>
                     <li className='menu__nav-item'><a href="">Grid</a></li>
                 </ul>
             </nav>
