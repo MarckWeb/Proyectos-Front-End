@@ -1,0 +1,24 @@
+@import "../../sass/variables";
+
+.inputs {
+  padding-top: 53px;
+  margin-left: 280px;
+
+  &__title {
+    font-size: 24px;
+    font-family: "poppins";
+    color: #4f4f4f;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #9e9e9e;
+  }
+}

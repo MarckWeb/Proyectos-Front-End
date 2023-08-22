@@ -1,0 +1,22 @@
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.default {
+  margin-top: 50px;
+
+  &:nth-child(2) {
+    margin-left: 60px;
+  }
+
+  &__text {
+    @include text;
+  }
+
+  &__btn {
+    @include btn;
+    width: 105px;
+    &-icon {
+      margin-right: 10px;
+    }
+  }
+}

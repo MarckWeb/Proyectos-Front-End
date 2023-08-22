@@ -1,0 +1,21 @@
+@use "variables";
+
+@mixin text {
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin-bottom: 16px;
+}
+
+@mixin input {
+  width: 200px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: $background-buttons;
+  border: 1px solid #828282;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  padding-left: 12px;
+}

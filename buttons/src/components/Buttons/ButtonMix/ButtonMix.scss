@@ -1,0 +1,59 @@
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.mix {
+  margin-top: 50px;
+
+  &__text {
+    @include text;
+  }
+
+  &__btn {
+    @include btn;
+  }
+
+  &:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+
+  &:nth-child(3) &__btn {
+    width: 93px;
+    height: 42px;
+  }
+
+  &:nth-child(4) &__btn {
+    background-color: #e0e0e0;
+    color: $color-name-button;
+  }
+
+  &:nth-child(6) &__btn,
+  &:nth-child(10) &__btn {
+    background-color: #455a64;
+    width: 104px;
+  }
+
+  &:nth-child(7) &__btn {
+    background-color: #d32f2f;
+  }
+
+  &:nth-child(8) &__btn {
+    color: $color-name-button;
+    background-color: #aeaeae;
+  }
+
+  &:nth-child(9) &__btn {
+    background-color: #0039cb;
+    margin-top: 12px;
+  }
+
+  &:nth-child(10) &__btn {
+    margin-top: 12px;
+    background-color: #1c313a;
+  }
+
+  &:nth-child(11) &__btn {
+    background-color: #9a0007;
+    margin-top: 12px;
+  }
+}

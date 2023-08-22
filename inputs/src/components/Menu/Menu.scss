@@ -1,0 +1,39 @@
+@import "../../sass/variables";
+
+.menu {
+  width: 100%;
+  max-width: 237px;
+  height: 1230px;
+  text-align: center;
+  padding: 50px;
+  background-color: $bacground-menu;
+  position: fixed;
+  top: 0;
+
+  &__title {
+    color: #090f31;
+    font-size: 13px;
+    font-family: "Poppins";
+    font-weight: 600;
+
+    & span {
+      color: #f7542e;
+    }
+  }
+
+  &__nav-items {
+    margin-top: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #9e9e9e;
+    list-style: none;
+  }
+
+  &__nav-item {
+    font-weight: 700;
+    &:hover {
+      color: #090f31;
+    }
+  }
+}
