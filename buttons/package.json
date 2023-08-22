@@ -3,13 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/MarckWeb/front-end-developer-from-devchallenge/buttons",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
