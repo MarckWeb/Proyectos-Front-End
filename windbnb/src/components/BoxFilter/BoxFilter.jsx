@@ -25,17 +25,12 @@ const BoxFilter = ({ toggleSearch, showBoxFilter }) => {
     }, [adultosCounter.count, childCounter.count]);
 
     const filterProperties = async () => {
-        try {
-            const res = await fetch('/windbnb/src/db/stays.json')
-            const datajson = await res.json()
-            const getCity = inputLocation.split(',')[0]
-            const filterData = datajson.filter(item => item.city === getCity && item.maxGuests > inputGuest
-            )
-            setData(filterData)
-        } catch (e) {
-            console.error("Error fetching or processing data:", e);
-        }
-
+        const res = await fetch('/src/db/stays.json')
+        const datajson = await res.json()
+        const getCity = inputLocation.split(',')[0]
+        const filterData = datajson.filter(item => item.city === getCity && item.maxGuests > inputGuest
+        )
+        setData(filterData)
     }
 
     return (
