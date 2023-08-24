@@ -8,6 +8,7 @@ import { MdSearch } from 'react-icons/md'
 import Inputs from './Inputs/Inputs'
 import Count from './Count/Count'
 import useCounter from '../../Hooks/useCounter'
+import json from '../../db/stays.json'
 
 const BoxFilter = ({ toggleSearch, showBoxFilter }) => {
 
@@ -25,8 +26,8 @@ const BoxFilter = ({ toggleSearch, showBoxFilter }) => {
     }, [adultosCounter.count, childCounter.count]);
 
     const filterProperties = async () => {
-        const res = await fetch('/src/db/stays.json')
-        const datajson = await res.json()
+        //const res = await fetch('/src/db/stays.json')
+        const datajson = json
         const getCity = inputLocation.split(',')[0]
         const filterData = datajson.filter(item => item.city === getCity && item.maxGuests > inputGuest
         )

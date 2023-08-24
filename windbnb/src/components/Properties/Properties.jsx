@@ -3,18 +3,19 @@ import './Properties.scss'
 import DataContext from '../DataContext/DataContext'
 
 import { MdStar } from 'react-icons/md'
+import json from '../../db/stays.json'
 
 const Properties = () => {
     const { data, setData } = useContext(DataContext)
 
-    const callApiProperties = async () => {
-        const res = await fetch('src/db/stays.json')
-        const datajson = await res.json()
-        setData(datajson)
-    }
+    // const callApiProperties = async () => {
+    //     const res = await fetch('/src/db/stays.json')
+    //     const datajson = await res.json()
+    //     setData(datajson)
+    // }
 
     useEffect(() => {
-        callApiProperties()
+        setData(json)
     }, [])
 
     return (
