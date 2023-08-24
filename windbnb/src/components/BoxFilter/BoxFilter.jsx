@@ -25,7 +25,7 @@ const BoxFilter = ({ toggleSearch, showBoxFilter }) => {
     }, [adultosCounter.count, childCounter.count]);
 
     const filterProperties = async () => {
-        const res = await fetch('src/db/stays.json')
+        const res = await fetch('/front-end-developer-from-devchallenge/windbnb/src/db/stays.json')
         const datajson = await res.json()
         const getCity = inputLocation.split(',')[0]
         const filterData = datajson.filter(item => item.city === getCity && item.maxGuests > inputGuest
