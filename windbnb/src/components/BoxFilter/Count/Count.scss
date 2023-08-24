@@ -1,0 +1,39 @@
+.count {
+  margin-top: 50px;
+  margin-left: 50px;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__age {
+    color: #bdbdbd;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 5px 0 16px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      width: 23px;
+      height: 23px;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 4px;
+      border: 1px solid #828282;
+      color: #828282;
+      cursor: pointer;
+    }
+
+    &-span {
+      width: 50px;
+      text-align: center;
+      border: none;
+      outline: none;
+    }
+  }
+}

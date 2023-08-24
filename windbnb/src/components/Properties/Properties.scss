@@ -1,0 +1,103 @@
+@import "../../assets/sass/mixins";
+
+.properties {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include table {
+      width: 100%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+
+      @include table {
+        font-size: 24px;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      color: #4f4f4f;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &__gallery {
+    margin-top: 25px;
+
+    &-figure {
+      & img {
+        width: 350px;
+        height: 270px;
+        border-radius: 24px;
+      }
+    }
+
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      list-style: none;
+      margin: 13px 0;
+      @include table {
+        font-size: 14px;
+      }
+
+      &-host {
+        border: 1px solid #4f4f4f;
+        border-radius: 12px;
+        padding: 6px 8px;
+        font-size: 10px;
+        color: #4f4f4f;
+        font-weight: 700;
+      }
+
+      &-item {
+        &:nth-child(2) {
+          color: #828282;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        &:nth-child(3) {
+          color: #4f4f4f;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+
+      &-icon {
+        font-size: 20px;
+        color: rgba(235, 87, 87, 0.9);
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      color: #333;
+      font-weight: 600;
+
+      @include table {
+        font-size: 16px;
+      }
+    }
+  }
+}

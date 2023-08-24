@@ -1,0 +1,128 @@
+@import "../../assets/sass/mixins";
+
+.boxFilter {
+  display: none;
+
+  &-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 50px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include table {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &-text {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    &-icon {
+      cursor: pointer;
+      font-size: 25px;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 351px;
+    height: 113px;
+    border-radius: 16px;
+    padding: 2px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    @include table {
+      flex-direction: row;
+      border-radius: 16px;
+
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__citys {
+    display: none;
+
+    &-active {
+      width: 200px;
+      display: block;
+      margin: 36px 50px;
+      list-style: none;
+      font-family: "Mulish", sans-serif;
+      margin-left: 100px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 35px;
+      cursor: pointer;
+    }
+
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &-icon {
+      font-size: 25px;
+    }
+  }
+
+  &__button {
+    width: 126px;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    background: rgba(235, 87, 87, 0.9);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 25px auto;
+
+    @include table {
+      position: absolute;
+      top: 22px;
+      right: 0;
+    }
+
+    @include desktop {
+      right: 200px;
+    }
+
+    &-icon {
+      font-size: 20px;
+    }
+  }
+
+  &__count {
+    display: none;
+
+    &-active {
+      display: block;
+      @include table {
+        margin-left: 450px;
+      }
+    }
+  }
+}

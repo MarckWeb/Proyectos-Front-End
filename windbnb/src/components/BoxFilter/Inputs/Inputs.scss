@@ -1,0 +1,39 @@
+@import "../../../assets/sass/mixins";
+
+.boxInput {
+  width: 100%;
+  max-width: 400px;
+  height: 56px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 11px 26px;
+
+  @include table {
+    border-radius: 12px 0 0 12px;
+    box-shadow: none;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &:nth-child(2) {
+    border-radius: 0 0 12px 12px;
+
+    @include table {
+      border-radius: 0;
+    }
+  }
+
+  &__label {
+    font-size: 9px;
+    color: #333;
+    font-weight: 800;
+    margin-bottom: 3px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+  }
+}
