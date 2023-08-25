@@ -1,0 +1,19 @@
+.cites {
+  display: grid;
+  place-content: center;
+  &__content {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+  }
+
+  &__author {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 140px;
+    margin-left: 100px;
+  }
+}
