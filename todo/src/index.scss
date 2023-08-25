@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Mulish:wght@200;500&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
