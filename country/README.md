@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/MarckWeb/front-end-developer-from-devchallenge/tree/main/country">
       Solution
     </a>
     <span> | </span>
