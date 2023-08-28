@@ -1,0 +1,44 @@
+.results {
+  width: 464px;
+  border-radius: 24px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+
+  padding: 68px 32px 32px;
+
+  & img {
+    width: 238px;
+    height: 136px;
+  }
+
+  & h2 {
+    color: #1d355d;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  & p {
+    color: #1d355d;
+    font-weight: 400;
+
+    & span {
+      color: #6fcf97;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
+  & button {
+    width: 209px;
+    height: 62px;
+    border: 2px solid #1d355d;
+    border-radius: 12px;
+    background: inherit;
+    font-weight: 600;
+    margin-top: 71px;
+    cursor: pointer;
+  }
+}
