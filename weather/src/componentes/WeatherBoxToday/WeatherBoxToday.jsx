@@ -36,7 +36,7 @@ const WeatherBoxToday = ({ weatherPlace, place, imperial, setImperial }) => {
                     return <article key={i} className='cardDays'>
                         <p className='cardDays__day'>{formatDate(days.datetime)}</p>
                         <figure className='cardDays__figure'>
-                            <img className='cardDays__figure-image' src={`weather/src/assets/img/${weatherImageMapping[days.conditions.split(', ')[0]]}`} alt="" />
+                            <img className='cardDays__figure-image' src={`/front-end-developer-from-devchallenge/weather/src/assets/img/${weatherImageMapping[days.conditions.split(', ')[0]]}`} alt="" />
                         </figure>
                         <p className='cardDays__grade'><span>{imperial ? `${parseInt((days.tempmax * 9 / 5) + 32)}°F` : `${parseInt(days.tempmax)}°C`}</span><span>{imperial ? `${parseInt((days.tempmin * 9 / 5) + 32)}°F` : `${parseInt(days.tempmin)}°C`}</span></p>
                     </article>
