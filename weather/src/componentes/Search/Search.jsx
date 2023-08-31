@@ -86,7 +86,8 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
 
                 </div>
                 <figure className='search__today-image'>
-                    <img src={`/front-end-developer-from-devchallenge/weather/src/assets/img/${weatherPlace && weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />
+                    {weatherPlace && <img src={`../src/assets/${weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />}
+
                 </figure>
 
                 <h2 className='search__today-grade'>{imperial ? `${parseInt(weatherPlace && (weatherPlace.main.temp_max * 9 / 5) + 32)}` : `${parseInt(weatherPlace && weatherPlace.main.temp_max)}`}
