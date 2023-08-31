@@ -7,6 +7,7 @@ import SearchPlace from '../SearchPlace/SearchPlace'
 import useLocation from '../../Hook/useLocation'
 import weatherImageMapping from '../../data/Images'
 
+
 const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 const API_URL_GEO = import.meta.env.VITE_API_URL_GEO;
 const API_URL_WEATHER = import.meta.env.VITE_API_URL_WEATHER;
@@ -86,7 +87,7 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
 
                 </div>
                 <figure className='search__today-image'>
-                    {weatherPlace && <img src={`../src/assets/${weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />}
+                    {weatherPlace && <img src={`../../../public/img/${weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />}
 
                 </figure>
 
