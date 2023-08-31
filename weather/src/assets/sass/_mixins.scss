@@ -1,0 +1,12 @@
+@use "variables";
+@mixin tall {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

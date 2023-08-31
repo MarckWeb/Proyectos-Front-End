@@ -1,0 +1,85 @@
+@import "../../assets/sass/variables";
+
+.search__place {
+  padding: 12px;
+  &-icon {
+    display: block;
+    margin-left: auto;
+    font-size: 35px;
+  }
+
+  &-from {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+  }
+
+  &-input {
+    width: 252px;
+    height: 48px;
+    border: 1px solid #e7e7eb;
+    position: relative;
+    color: #616475;
+
+    & input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      padding-left: 50px;
+      outline: none;
+      color: #e7e7eb;
+    }
+
+    & input::placeholder {
+      font-size: 16px;
+      color: #616475;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 12px;
+      font-size: 25px;
+      margin-left: 12px;
+    }
+  }
+
+  &-submit {
+    width: 86px;
+    height: 48px;
+    background: #3c47e9;
+    color: #e7e7eb;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+  }
+
+  &-countrys {
+    list-style: none;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &-country {
+    width: 351px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    &-icon {
+      display: none;
+    }
+
+    &:hover {
+      border: 1px solid #616475;
+    }
+
+    &:hover &-icon {
+      display: block;
+    }
+  }
+}

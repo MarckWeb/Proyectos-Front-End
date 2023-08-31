@@ -1,0 +1,6 @@
+@import "./assets/sass/mixins";
+.container {
+  @include tall {
+    display: flex;
+  }
+}

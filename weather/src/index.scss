@@ -1,0 +1,22 @@
+@import "./assets/sass/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+body {
+  font-size: $font-size;
+  font-family: $font-family-primary;
+  background-color: $background-weatherbox;
+  font-style: normal;
+  color: $font-colors;
+}

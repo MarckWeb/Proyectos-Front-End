@@ -1,0 +1,131 @@
+@import "../../assets/sass/variables";
+@import "../../assets/sass/mixins";
+
+.search {
+  width: 100%;
+  max-width: 375px;
+  height: 810px;
+  background: $background-search;
+  color: $font-colors;
+
+  &__today {
+    color: #88869d;
+    font-size: 18px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 19px 11px;
+
+      &-search {
+        width: 161px;
+        height: 40px;
+        background: #6e707a;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #e7e7eb;
+        font-family: $font-family-primary;
+        font-size: 16px;
+        border: none;
+      }
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #6e707a;
+        display: grid;
+        place-content: center;
+        font-size: 25px;
+        color: #e7e7eb;
+        cursor: pointer;
+      }
+    }
+
+    &-containerImg {
+      background-image: url("../../assets/img/Cloud-background.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      display: grid;
+      place-content: center;
+      opacity: 0.1;
+    }
+
+    &-image {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+
+      & img {
+        width: 150px;
+        height: 174px;
+      }
+    }
+
+    &-grade {
+      color: #e7e7eb;
+      font-size: 144px;
+      font-weight: 500;
+      text-align: center;
+
+      & span {
+        font-size: 48px;
+      }
+    }
+
+    &-status {
+      color: #a09fb1;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    &-day,
+    &-location {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    &-location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @include tall {
+    height: 1023px;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  place-content: center;
+  border: 2px solid red;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  background-image: url("../../assets/img/Cloud-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+// .overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: gray; /* Color semi-transparente */
+// }

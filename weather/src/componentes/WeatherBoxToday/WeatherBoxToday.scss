@@ -1,0 +1,111 @@
+@import "../../assets/sass/mixins";
+@import "../../assets/sass/variables";
+
+.cardDays {
+  width: 125px;
+  height: 177px;
+  background: $background-search;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #e7e7eb;
+
+  &__figure {
+    width: 56.439px;
+    height: 62px;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__grade {
+    display: flex;
+    gap: 18px;
+    & span {
+      &:nth-child(2) {
+        color: #a09fb1;
+      }
+    }
+  }
+}
+
+.days {
+  @include flex;
+  flex-direction: column;
+  margin: auto;
+
+  &__temperature {
+    @include flex;
+    gap: 12px;
+    list-style: none;
+    margin-left: auto;
+
+    & li {
+      width: 40px;
+      height: 40px;
+      border-radius: 54px;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        color: #110e3c;
+        background: #e7e7eb;
+      }
+
+      &:nth-child(2) {
+        background: #585676;
+      }
+    }
+  }
+
+  &__forTime,
+  &__statusOfDay {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-top: 72px;
+    margin-right: auto;
+    margin-bottom: 32px;
+    color: #e7e7eb;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__forTime {
+    gap: 28px;
+    margin-top: 66px;
+  }
+
+  &__statusOfDay {
+    gap: 48px;
+  }
+
+  &__footer {
+    margin-top: 100px;
+    color: #a09fb1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+
+    & a {
+      color: #a09fb1;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+  }
+}
