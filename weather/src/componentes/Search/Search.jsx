@@ -87,7 +87,7 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
 
                 </div>
                 <figure className='search__today-image'>
-                    {weatherPlace && <img src={`../../../public/img/${weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />}
+                    {weatherPlace && <img src={`/img/${weatherImageMapping[weatherPlace.weather[0].main]}`} alt="" />}
 
                 </figure>
 
