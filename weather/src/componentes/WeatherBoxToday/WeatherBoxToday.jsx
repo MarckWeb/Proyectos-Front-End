@@ -10,7 +10,7 @@ const WeatherBoxToday = ({ weatherPlace, place, imperial, setImperial }) => {
     const [dataForDays, setDataForDays] = useState(null)
 
     const callApiWeatherDays = async (valor) => {
-        const res = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?unitGroup=${valor || 'metric'}&key=${API_KEY_CROSSING}&contentType=json`)
+        const res = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place || 'Madrid, ES'}?unitGroup=${valor || 'metric'}&key=${API_KEY_CROSSING}&contentType=json`)
         const data = await res.json()
         setDataForDays(data.days.slice(1, 6))
     }
