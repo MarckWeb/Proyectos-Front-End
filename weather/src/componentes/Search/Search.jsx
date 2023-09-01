@@ -37,18 +37,14 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
             try {
                 const res = await fetch(`${API_URL_WEATHER}?q=${place || 'Madrid'}&appid=${API_KEY}&units=metric`);
                 const data = await res.json();
-                if (data.cod === 200) {
-                    setWeatherPlace(data);
-                } else {
-                    alert('Location unavailable. Displaying default location: Madrid');
-                }
+                alert('Location unavailable. Displaying default location: Madrid');
+                setWeatherPlace(data);
             } catch (error) {
                 console.error("Fetch Error:", error);
             }
         };
-        if (place) {
-            callApiWeather();
-        }
+
+        callApiWeather();
 
     }, [place]);
 
@@ -104,7 +100,7 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
                 : <SearchPlace
                     showSearches={showSearches}
                     setPlace={setPlace}
-                    place={place || 'Madrid'} />}
+                    place={place} />}
 
 
         </section>

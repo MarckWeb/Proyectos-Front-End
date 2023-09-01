@@ -4,7 +4,7 @@ import Search from './componentes/Search/Search'
 import WeatherBoxToday from './componentes/WeatherBoxToday/WeatherBoxToday'
 
 function App() {
-  const [place, setPlace] = useState(null)
+  const [place, setPlace] = useState('')
   const [weatherPlace, setWeatherPlace] = useState(null)
   const [imperial, setImperial] = useState(false)
 
