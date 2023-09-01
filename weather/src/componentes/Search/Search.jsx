@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Search.scss'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { MdMyLocation } from 'react-icons/md'
 import { MdLocationPin } from 'react-icons/md'
@@ -16,6 +18,20 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
     const [toggle, setToggle] = useState(true)
     const [currentDate, setCurrentDate] = useState('');
     const { location } = useLocation();
+
+    const showLocationPermissionNotification = () => {
+        toast.info("Esta aplicación necesita permisos de ubicación. Se utilizará Madrid como ubicación por defecto.", { autoClose: 10000, });
+    }
+    useEffect(() => {
+        const checkLocationPermission = async () => {
+            const hasGeolocationPermission = await navigator.permissions.query({ name: 'geolocation' });
+            if (hasGeolocationPermission.state === 'denied') {
+                showLocationPermissionNotification();
+            }
+        };
+
+        checkLocationPermission();
+    }, []);
 
     const showSearches = () => {
         setToggle(!toggle)
@@ -37,7 +53,7 @@ const Search = ({ weatherPlace, setWeatherPlace, place, setPlace, imperial, setI
             try {
                 const res = await fetch(`${API_URL_WEATHER}?q=${place || 'Madrid'}&appid=${API_KEY}&units=metric`);
                 const data = await res.json();
-                alert('Location unavailable. Displaying default location: Madrid');
+
                 setWeatherPlace(data);
             } catch (error) {
                 console.error("Fetch Error:", error);
