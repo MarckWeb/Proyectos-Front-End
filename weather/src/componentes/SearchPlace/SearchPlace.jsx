@@ -13,7 +13,7 @@ const SearchPlace = ({ showSearches, setPlace, place }) => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${placeInput}&limit=5&appid=${API_KEY}`)
+            const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${placeInput}&limit=5&appid=${API_KEY}`)
             const data = await response.json();
             setPlacesFound(data)
 
