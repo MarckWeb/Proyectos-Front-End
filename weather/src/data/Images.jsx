@@ -8,7 +8,7 @@ const weatherImageMapping = {
     Shower: 'Shower.png',
     sleet: 'Sleet.png',
     Snow: 'Snow.png',
-    thurnderstrom: 'Thunderstorm.png',
+    Thurnderstrom: 'Thunderstorm.png',
     "Partially cloudy": 'HeavyCloud.png',
     Overcast: 'HeavyCloud.png'
 };
