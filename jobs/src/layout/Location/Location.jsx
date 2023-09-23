@@ -37,43 +37,6 @@ const Location = ({ country, setCountry, city, setCity, callApi }) => {
                     <BiSearchAlt2 className='location__inputBox-btn-icon' />
                 </button>
             </div>
-            <ul className='location__place'>
-                <li className='location__place-list'>
-                    <Input
-                        className='location__place-list-input'
-                        type='radio'
-                        name='city'
-                        id='cityOne' />
-                    <span className='location__place-span'>London</span>
-                </li>
-
-                <li className='location__place-list'>
-                    <Input
-                        className='location__place-list-input'
-                        type='radio'
-                        name='city'
-                        id='cityTwo' />
-                    <span className='location__place-span'>Amsterdan</span>
-                </li>
-
-                <li className='location__place-list'>
-                    <Input
-                        className='location__place-list-input'
-                        type='radio'
-                        name='city'
-                        id='cityThree' />
-                    <span className='location__place-span'>New York</span>
-                </li>
-
-                <li className='location__place-list'>
-                    <Input
-                        className='location__place-list-input'
-                        type='radio'
-                        name='city'
-                        id='cityFour' />
-                    <span className='location__place-span'>Berlin</span>
-                </li>
-            </ul>
         </div>
     )
 }
