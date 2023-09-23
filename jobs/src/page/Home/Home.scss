@@ -1,0 +1,132 @@
+@import "../../assets/sass/mixins";
+
+.container {
+  width: 400px;
+  padding: 32px 12px;
+  margin: auto;
+
+  &__checkbox {
+    @include flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    &-input {
+      margin: 29px 0 32px;
+      margin-right: 10px;
+      &[type="checkbox"] {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  @include desk {
+    width: 1200px;
+    margin: 32px auto;
+  }
+}
+
+.company {
+  width: 344px;
+  height: 147px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 23px;
+  @include flex;
+  justify-content: flex-start;
+  cursor: pointer;
+
+  &__logo {
+    width: 100%;
+    max-width: 90px;
+    height: 90px;
+    &-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &__content {
+    &-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &-btn {
+      width: 63px;
+      height: 26px;
+      border-radius: 4px;
+      border: 1px solid #334680;
+      background-color: inherit;
+      color: #334680;
+      font-weight: 700;
+    }
+    @include desk {
+      &-div {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__place {
+    list-style: none;
+    @include flex;
+    justify-content: flex-start;
+    gap: 50px;
+
+    &-item {
+      @include flex;
+      color: #b9bdcf;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  @include desk {
+    width: 790px;
+    height: 114px;
+  }
+}
+
+.pages {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  color: #b7bcce;
+
+  &__active {
+    background-color: #1e86ff;
+    color: white;
+  }
+
+  &__btn {
+    padding: 5px;
+    background-color: none;
+    border: 1px solid #b7bcce;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    color: #b7bcce;
+
+    &:hover {
+      background-color: #1e86ff;
+      border: none;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}

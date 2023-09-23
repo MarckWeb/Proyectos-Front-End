@@ -1,0 +1,11 @@
+.searchBackground__box-input {
+  height: 100%;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: #b9bdcf;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

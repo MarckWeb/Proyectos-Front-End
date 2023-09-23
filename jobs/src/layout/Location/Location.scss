@@ -1,0 +1,83 @@
+@import "../../assets/sass/mixins";
+
+.location {
+  &__title {
+    color: #b9bdcf;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__inputBox {
+    width: 100%;
+    max-width: 351px;
+    height: 48px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    padding-left: 10px;
+
+    &-icon {
+      font-size: 25px;
+      color: #b9bdcf;
+      margin-right: 10px;
+    }
+
+    &-input {
+      height: 100%;
+      width: 85%;
+      border: none;
+      outline: none;
+      &::placeholder {
+        color: #b9bdcf;
+      }
+    }
+
+    &-select {
+      height: 100%;
+      color: #b9bdcf;
+      border: none;
+      outline: none;
+      border-left: 2px solid #b9bdcf60;
+      padding: 5px;
+    }
+
+    &-btn {
+      width: 50px;
+      height: 100%;
+      border: none;
+      border-radius: 2px;
+      background: none;
+      border-left: 2px solid #b9bdcf60;
+      padding: 5px;
+      cursor: pointer;
+      &-icon {
+        color: #b9bdcf60;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__place {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    &-list {
+      @include flex;
+      justify-content: flex-start;
+      margin-left: 10px;
+
+      &-input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
