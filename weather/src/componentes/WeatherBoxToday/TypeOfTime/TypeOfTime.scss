@@ -3,11 +3,15 @@
 .types {
   width: 328px;
   height: 204px;
-  background: #1e213a;
   @include flex;
   flex-direction: column;
   padding: 22px 0;
-  color: #e7e7eb;
+  color: #0d0d10;
+  border: 1px solid #fafafa81;
+  border-radius: 5px;
+  background: #fafafa53;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px);
 
   &__title {
     text-align: center;

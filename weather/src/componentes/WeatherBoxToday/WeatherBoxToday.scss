@@ -4,14 +4,18 @@
 .cardDays {
   width: 125px;
   height: 177px;
-  background: $background-search;
+  // background: $background-search;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  color: #e7e7eb;
-
+  color: white;
+  border: 1px solid #fafafa81;
+  border-radius: 5px;
+  background: #fafafa11;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   &__figure {
     width: 56.439px;
     height: 62px;

@@ -17,6 +17,10 @@ body {
   font-size: $font-size;
   font-family: $font-family-primary;
   background-color: $background-weatherbox;
+  background-image: url("/img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-style: normal;
   color: $font-colors;
 }
