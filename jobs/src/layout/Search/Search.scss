@@ -7,9 +7,10 @@
   border-radius: 8px;
   display: grid;
   place-content: center;
-  background-image: url("/img/background.png");
-  background-position: center;
+  background-image: url("/img/jobs.jpg");
+  background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
 
   &__box {
     width: 315px;
